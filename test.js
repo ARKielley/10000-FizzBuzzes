@@ -19,5 +19,11 @@ function fizzBuzzThree(n) {
         fizz: ["Fizz", "", ""],
         buzz: ["Buzz", "", "", "", ""]
     }
-    return FIZZBUZZOBJ.fizz[n] + FIZZBUZZOBJ.buzz[n] || n;
+    return FIZZBUZZOBJ.fizz[n % 3] + FIZZBUZZOBJ.buzz[n % 5] || n;
+}
+
+function fizzBuzzFour(n) {
+    const FIZZBUZZKEY = ["FizzBuzz",n,n,"Fizz",n,"Buzz","Fizz",n,n,"Fizz","Buzz",n,"Fizz",n,n,]
+  //  console.log(FIZZBUZZKEY[n]);
+    return FIZZBUZZKEY[n % 15];
 }
