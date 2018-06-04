@@ -9,3 +9,15 @@ function fizzBuzzOne(n) {
         return n;
     }
 }
+
+function fizzBuzzTwo(n) {
+    return `${(n % 3 === 0 ? "Fizz" : "") + (n % 5 === 0 ? "Buzz" : "") || n}`;
+}
+
+function fizzBuzzThree(n) {
+    const FIZZBUZZOBJ = {
+        fizz: ["Fizz", "", ""],
+        buzz: ["Buzz", "", "", "", ""]
+    }
+    return FIZZBUZZOBJ.fizz[n] + FIZZBUZZOBJ.buzz[n] || n;
+}
