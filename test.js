@@ -11,7 +11,7 @@ function fizzBuzzOne(n) {
 }
 
 function fizzBuzzTwo(n) {
-    return `${(n % 3 === 0 ? "Fizz" : "") + (n % 5 === 0 ? "Buzz" : "") || n}`;
+    return (n % 3 ? "" : "Fizz") + (n % 5 ? "" : "Buzz") || n;
 }
 
 function fizzBuzzThree(n) {
@@ -23,7 +23,6 @@ function fizzBuzzThree(n) {
 }
 
 function fizzBuzzFour(n) {
-    const FIZZBUZZKEY = ["FizzBuzz",n,n,"Fizz",n,"Buzz","Fizz",n,n,"Fizz","Buzz",n,"Fizz",n,n,]
-  //  console.log(FIZZBUZZKEY[n]);
-    return FIZZBUZZKEY[n % 15];
+    const FIZZBUZZKEY = ["FizzBuzz",n,n,"Fizz",n,"Buzz","Fizz",n,n,"Fizz","Buzz",n,"Fizz",n,n]
+    return n && FIZZBUZZKEY[n % 15];
 }
